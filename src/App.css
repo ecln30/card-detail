@@ -1,38 +1,328 @@
+
+* {
+     box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding:0;
+}
+
 .App {
-  text-align: center;
+    width:100%;
+    height:100%;
+    background: rgb(40, 42, 45) no-repeat;
+    background-size:auto 100vh;
+    color:white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Img {
+   width: 40%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mainImg {
+   height:100vh;
+   z-index:1;
+}
+
+.main {
+    width:100%;
+    height: 100vh;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items:center;
+    z-index: 1;
+}
+
+.cards {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: 30%;
+  left: 10%;
+  z-index:2;
+}
+
+.cardimg {
+   z-index: 2;
+}
+
+.cardimg.Back{
+   margin:3em 5.5em;
+}
+
+label {
+   margin: 1em;
+}
+
+.In1, .In2 {
+  width: 20%;
+  height: 3em;
+  border-radius:10px;  
+}
+
+.In3 {
+  margin-left: 2em;
+  border-radius:8px;
+  flex-wrap:wrap
+}
+
+.name {
+  width: 80%;
+  height:3em;
+  border-radius:8px;
+}
+
+.num {
+  width:80%;
+  height:3em;
+  border-radius:8px;
+}
+
+.cvc {
+   margin-left: 11em;
+}
+
+.cardnumber{
+  width:80%;
+  position: absolute;
+  top:52%;
+  left:10%;
+  font-size:1.5rem;
+  color:white;
+}
+
+.cardName {
+  position: absolute;
+  top:70%;
+  left:10%;
+  font-size:1.5rem;
+  color:rgb(34, 181, 210);
+}
+
+.mon{
+  position: absolute;
+  top:70%;
+  right:10%;
+  font-size:1.5rem;
+  color:rgb(34, 181, 210);
+}
+
+.cvc {
+  position: absolute;
+  top:41.5%;
+  right:-8%;
+  font-size:1.3rem;
+  color:rgb(220, 23, 49);
+}
+
+@media(max-width: 1570px) {
+  .cards {
+    top: 80%
+  }
+  .cardimg .Back{
+    margin:3em 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media(max-width:1020px) {
+  .In3 {
+     width:34%
   }
 }
+
+@media(max-width:900px) {
+  .mainImg{
+     position:absolute;
+     width:100vh;
+     height: 20%;
+  }
+
+  .In3 {
+     margin-right:-5%;
+     width: 33%;
+     height: 3em;
+  }
+  .cvc {
+    margin-left: 5em;
+ }
+}
+
+@media(max-width:800px){
+  .cvc {
+    margin-left: 5em;
+ }
+ .In3{
+    width:30%
+ }
+}
+
+
+@media(max-width:500px) {
+  .cvc {
+     margin-left: 3em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
