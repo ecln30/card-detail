@@ -36,7 +36,7 @@ function Form({name,setName,num,setNum,cvc,setCvc,mon,setMon,year,setYear,handle
         />
       </Flex>
       <Flex direction='column' >
-       <label htmlFor="card">EXP.DATE(MM/YY) <span className='cvc'>CVC</span></label>
+       <label htmlFor="card">EXP.DATE(MM/YY)</label>
        <Flex gap='3' mb='3em' >
          <Input border='1px' borderColor='blue.300' className='In1' type="text" 
            w='20%'
